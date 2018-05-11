@@ -1,3 +1,4 @@
+const benchmark = require('./benchmark');
 let numIterations = 0;
 
 // The Ackermann Function is an early example of a computable function (one that can be implemented using only for/while loops) that is not primitive recursive (one that can be implemented using only do-loops (in JS, this is a for-loop))
@@ -14,4 +15,8 @@ function A(x, y) {
 };
 
 // Observe the how quickly the number of iterations grows with x (huge understatement)
-console.log(A(3,3), numIterations);
+benchmark(() => {
+    console.log(A(3,9), numIterations)
+});
+
+

@@ -22,4 +22,6 @@ function wrapper() {
     }
 }
 
-benchmark(wrapper);
+// benchmark(wrapper);
+
+module.exports = benchmark;
