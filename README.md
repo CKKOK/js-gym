@@ -16,3 +16,8 @@ Calculate the value of the Ackermann function, an early example of a function th
 - Naive implementation of recurrence relation. O(2^n) complexity.
 - Tail recursion. O(n) complexity, but in practice it takes a similar amount of time to run as the explicit formula due to the speed of Math.sqrt
 - Iterative implementation of the recurrence relation. Also O(n) complexity, and should theoretically be faster than even the tail recursion implementation, but in practice is consistently about 30% to 60% slower.
+
+## scrabble.js
+Determine if 2 words are anagrams of each other.
+Find all anagrams of a given word, using the enable1.txt dictionary provided by Google.
+Consider reshaping the data in that dictionary to speed up future runs.
