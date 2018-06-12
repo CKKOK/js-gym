@@ -21,3 +21,19 @@ Calculate the value of the Ackermann function, an early example of a function th
 Determine if 2 words are anagrams of each other.
 Find all anagrams of a given word, using the enable1.txt dictionary provided by Google.
 Consider reshaping the data in that dictionary to speed up future runs.
+
+## project-euler-484.js
+Problem definition:
+```
+The arithmetic derivative is defined by
+
+p' = 1 for any prime p
+(ab)' = a'b + ab' for all integers a, b (Leibniz rule)
+For example, 20' = 24
+
+Find ∑ gcd(k,k') for 1 < k ≤ 5·10^15
+
+Note: gcd(x,y) denotes the greatest common divisor of x and y.
+```
+Some very basic number theory (primes and factors) is involved in transforming the problem.
+To get the computation done in any reasonable amount of time with reasonable memory usage, typed arrays and cluster forking are needed.
